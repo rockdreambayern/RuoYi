@@ -1,0 +1,27 @@
+package com.scsentry;
+
+import com.ruoyi.RuoYiApplication;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class },
+                        scanBasePackages = {"com.scsentry","com.ruoyi"})
+public class SCSentryAdminApplication {
+
+    public static void main(String[] args)
+    {
+        // System.setProperty("spring.devtools.restart.enabled", "false");
+        SpringApplication.run(RuoYiApplication.class, args);
+        System.out.println("(♥◠‿◠)ﾉﾞ  哨兵科技管理平台启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
+                " .-------.       ____     __        \n" +
+                " |  _ _   \\      \\   \\   /  /    \n" +
+                " | ( ' )  |       \\  _. /  '       \n" +
+                " |(_ o _) /        _( )_ .'         \n" +
+                " | (_,_).' __  ___(_ o _)'          \n" +
+                " |  |\\ \\  |  ||   |(_,_)'         \n" +
+                " |  | \\ `'   /|   `-'  /           \n" +
+                " |  |  \\    /  \\      /           \n" +
+                " ''-'   `'-'    `-..-'              ");
+    }
+}

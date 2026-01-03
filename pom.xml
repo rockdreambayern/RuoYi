@@ -229,10 +229,18 @@
                 <version>${ruoyi.version}</version>
             </dependency>
 
+            <!-- 定制业务-->
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>ruoyi-admin</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <modules>
+        <module>biz-admin</module>
         <module>ruoyi-admin</module>
         <module>ruoyi-framework</module>
         <module>ruoyi-system</module>
